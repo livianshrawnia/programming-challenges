@@ -21,8 +21,7 @@ Input  :  arr[] = {1, 1, 1, 1},
 Output :  6
 There are 3! pairs with sum 2.
 
-Input  :  arr[] = {10, 12, 10, 15, -1, 7, 6, 
-                   5, 4, 2, 1, 1, 1}, 
+Input  :  arr[] = {10, 12, 10, 15, -1, 7, 6, 5, 4, 2, 1, 1, 1}, 
           sum = 11
 Output :  9
 Expected time complexity O(n) */
