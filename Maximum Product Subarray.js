@@ -26,6 +26,7 @@ Output:   80  // The subarray is {-2, -40} */
 		if(subArr[i] === 0) break;
 		newArr.push(subArr[i]);
 	 }
+	 if(newArr.length === 0) newArr = [0];
 	 console.log("newArr : ", newArr);
 	 let result = newArr.reduce((a,b)=>a*b);
 	 console.log("result : ", result);
@@ -35,4 +36,6 @@ Output:   80  // The subarray is {-2, -40} */
  console.log(getSubArrayProduct([6, -3, -10, 0, 2]));
  console.log(getSubArrayProduct([-1, -3, -10, 0, 60]));
  console.log(getSubArrayProduct([-2, -40, 0, -2, -3]));
- console.log(getSubArrayProduct([6, 0, -3, -10, 0, 2]));
+ console.log(getSubArrayProduct([6, 0, -3, -10, 0, 2])); 
+ console.log(getSubArrayProduct([0,0,0,0,0]));
+ console.log(getSubArrayProduct([0,0,0, -10, 0, 0]));
