@@ -13,18 +13,16 @@ var findElements = (arr, k) => {
 	console.log("t : ", t);
 	let uniqueArr = Array.from(new Set(arr));
 	console.log("uniqueArr : ", uniqueArr);
-	console.log("arr : ", arr);
-	let newArr = [];
+	let result = [];
 	for(let i=0; i<uniqueArr.length; i++){
 		let num = 0;
 		for(let j=0; j<arrLen; j++){
 			if(uniqueArr[i]===arr[j]){
-				newArr[uniqueArr[i]+""] = [uniqueArr[i],++num]
+				num++;
 			}
 		}
+		if(num > t){ result.push(uniqueArr[i]); }
 	}
-	console.log("newArr : ", newArr);
-	let result = newArr.filter(item=>item[1]>t).map(item=>item[0]);
 	console.log("result : ", result);
 	return result.join(",");
 }
